@@ -1,10 +1,13 @@
 server:
-  port: 9001
+  port: 9002
+
+#jsp
 spring:
   mvc:
     view:
       prefix: /WEB-INF/
       suffix: .jsp
+
   devtools:
     livereload:
       enabled: true

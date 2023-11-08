@@ -13,6 +13,6 @@
 </head>
 <body>
 ㅎㅇ 오늘은 젠킨스 CICD 파이프라인 구축할 예정입니다.
-
+<img src="../q1.jpg" style="width:200px; height: 250px;">
 </body>
 </html>

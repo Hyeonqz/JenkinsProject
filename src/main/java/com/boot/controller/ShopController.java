@@ -1,4 +1,4 @@
-package com.shop.controller;
+package com.boot.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,16 +6,20 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
-public class shopController {
+public class ShopController {
 
-	@GetMapping
+	@GetMapping("/")
 	public String start() {
-		return "redirect:shop/list";
+		return "redirect:/shop/list";
 	}
+
 	@GetMapping("/shop/list")
 	public ModelAndView list() {
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("shop/shoplist");
-		return modelAndView;
+
+		ModelAndView model=new ModelAndView();
+
+		model.setViewName("shop/shoplist");
+
+		return model;
 	}
 }
